@@ -58,15 +58,10 @@ public class ChronoTimer extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 646, 585);
 		contentPane = new JPanel();
+		contentPane.setBackground(Color.WHITE);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setBounds(5, 5, 615, 510);
-		lblNewLabel.setOpaque(true);
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Morgan\\git\\chronoGui\\ChronoGUI\\GUIwithBuilder\\XXGUI\\chrono.jpg"));
-		contentPane.add(lblNewLabel);
 		
 		JButton btn1 = new JButton("1");
 		btn1.setBorder(null);
@@ -162,7 +157,7 @@ public class ChronoTimer extends JFrame {
 		
 		JRadioButton enable4 = new JRadioButton("");
 		enable4.setBackground(new Color(255, 255, 255));
-		enable4.setBounds(298, 144, 30, 25);
+		enable4.setBounds(303, 144, 30, 25);
 		contentPane.add(enable4);
 		
 		JRadioButton enable6 = new JRadioButton("");
@@ -327,19 +322,23 @@ public class ChronoTimer extends JFrame {
 		contentPane.add(lblUsbPort);
 		
 		JLabel lblStart = new JLabel("Start");
-		lblStart.setBounds(223, 64, 46, 14);
+		lblStart.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblStart.setBounds(232, 64, 32, 14);
 		contentPane.add(lblStart);
 		
 		JLabel lblEnabledisable = new JLabel("Enable/Disable");
-		lblEnabledisable.setBounds(221, 80, 46, 14);
+		lblEnabledisable.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblEnabledisable.setBounds(178, 84, 91, 14);
 		contentPane.add(lblEnabledisable);
 		
 		JLabel lblFinish = new JLabel("Finish");
-		lblFinish.setBounds(214, 126, 46, 14);
+		lblFinish.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblFinish.setBounds(230, 126, 38, 14);
 		contentPane.add(lblFinish);
 		
 		JLabel label = new JLabel("Enable/Disable");
-		label.setBounds(198, 144, 46, 14);
+		label.setFont(new Font("Tahoma", Font.BOLD, 11));
+		label.setBounds(178, 149, 91, 14);
 		contentPane.add(label);
 		
 		JLabel lblQueueRunning = new JLabel("Queue / Running / Final Time");
@@ -375,5 +374,15 @@ public class ChronoTimer extends JFrame {
 		label_2.setFont(new Font("Tahoma", Font.BOLD, 12));
 		label_2.setBounds(273, 110, 129, 14);
 		contentPane.add(label_2);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
+		lblNewLabel.setBounds(10, 380, 610, 143);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
+		lblNewLabel_1.setBounds(10, 11, 610, 348);
+		contentPane.add(lblNewLabel_1);
 	}
 }
