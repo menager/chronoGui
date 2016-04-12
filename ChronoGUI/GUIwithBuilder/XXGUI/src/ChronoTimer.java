@@ -28,6 +28,7 @@ import javax.swing.JTextArea;
 import java.awt.SystemColor;
 import javax.swing.UIManager;
 import javax.swing.border.MatteBorder;
+import java.awt.Canvas;
 
 public class ChronoTimer extends JFrame {
 
@@ -314,5 +315,35 @@ public class ChronoTimer extends JFrame {
 		JButton upArrow = new JButton("U");
 		upArrow.setBounds(168, 214, 21, 23);
 		contentPane.add(upArrow);
+		
+		JLabel lblChan = new JLabel("CHAN");
+		lblChan.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblChan.setBounds(31, 395, 46, 14);
+		contentPane.add(lblChan);
+		
+		JLabel lblUsbPort = new JLabel("USB PORT");
+		lblUsbPort.setBounds(319, 420, 64, 14);
+		contentPane.add(lblUsbPort);
+		
+		JLabel lblStart = new JLabel("Start");
+		lblStart.setBounds(223, 64, 46, 14);
+		contentPane.add(lblStart);
+		
+		JLabel lblEnabledisable = new JLabel("Enable/Disable");
+		lblEnabledisable.setBounds(221, 80, 46, 14);
+		contentPane.add(lblEnabledisable);
+		
+		JLabel lblFinish = new JLabel("Finish");
+		lblFinish.setBounds(214, 126, 46, 14);
+		contentPane.add(lblFinish);
+		
+		JLabel label = new JLabel("Enable/Disable");
+		label.setBounds(198, 144, 46, 14);
+		contentPane.add(label);
+		
+		JLabel lblQueueRunning = new JLabel("Queue / Running / Final Time");
+		lblQueueRunning.setFont(new Font("Tahoma", Font.PLAIN, 9));
+		lblQueueRunning.setBounds(250, 325, 135, 14);
+		contentPane.add(lblQueueRunning);
 	}
 }
