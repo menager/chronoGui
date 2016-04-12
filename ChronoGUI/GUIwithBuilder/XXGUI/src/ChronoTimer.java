@@ -214,6 +214,7 @@ public class ChronoTimer extends JFrame {
 		mainDisplay.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
 		mainDisplay.setText("");
 		mainDisplay.setBounds(243, 183, 149, 135);
+		mainDisplay.setEditable(false);
 		contentPane.add(mainDisplay);
 		
 		JTextArea txtrPrinterarea = new JTextArea();
