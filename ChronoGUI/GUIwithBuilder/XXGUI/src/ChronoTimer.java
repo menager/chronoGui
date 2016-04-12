@@ -27,6 +27,8 @@ import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
 import java.awt.SystemColor;
 import javax.swing.UIManager;
+import javax.swing.border.MatteBorder;
+import java.awt.Canvas;
 
 public class ChronoTimer extends JFrame {
 
@@ -56,15 +58,10 @@ public class ChronoTimer extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 646, 585);
 		contentPane = new JPanel();
+		contentPane.setBackground(Color.WHITE);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setBounds(5, 5, 615, 510);
-		lblNewLabel.setOpaque(true);
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Dave\\git\\chronoGui\\ChronoGUI\\GUIwithBuilder\\XXGUI\\chrono.jpg"));
-		contentPane.add(lblNewLabel);
 		
 		JButton btn1 = new JButton("1");
 		btn1.setBorder(null);
@@ -160,7 +157,7 @@ public class ChronoTimer extends JFrame {
 		
 		JRadioButton enable4 = new JRadioButton("");
 		enable4.setBackground(new Color(255, 255, 255));
-		enable4.setBounds(298, 144, 30, 25);
+		enable4.setBounds(303, 144, 30, 25);
 		contentPane.add(enable4);
 		
 		JRadioButton enable6 = new JRadioButton("");
@@ -200,7 +197,7 @@ public class ChronoTimer extends JFrame {
 		
 		JButton btnFunction = new JButton("FUNCTION");
 		btnFunction.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		btnFunction.setBounds(48, 185, 107, 25);
+		btnFunction.setBounds(48, 183, 107, 25);
 		contentPane.add(btnFunction);
 		
 		JButton btnSwap = new JButton("SWAP");
@@ -214,66 +211,69 @@ public class ChronoTimer extends JFrame {
 		contentPane.add(btnPrinterPwr);
 		
 		JTextArea mainDisplay = new JTextArea();
+		mainDisplay.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
 		mainDisplay.setText("");
 		mainDisplay.setBounds(243, 183, 149, 135);
+		mainDisplay.setEditable(false);
 		contentPane.add(mainDisplay);
 		
 		JTextArea txtrPrinterarea = new JTextArea();
+		txtrPrinterarea.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
 		txtrPrinterarea.setText("");
 		txtrPrinterarea.setBounds(454, 60, 84, 80);
 		contentPane.add(txtrPrinterarea);
 		
 		JRadioButton chan1 = new JRadioButton("");
 		chan1.setBackground(Color.WHITE);
-		chan1.setBounds(94, 409, 28, 25);
+		chan1.setBounds(93, 411, 22, 22);
 		contentPane.add(chan1);
 		
 		JRadioButton chan3 = new JRadioButton("");
 		chan3.setBackground(Color.WHITE);
-		chan3.setBounds(124, 409, 26, 25);
+		chan3.setBounds(123, 411, 22, 22);
 		contentPane.add(chan3);
 		
 		JRadioButton chan5 = new JRadioButton("");
 		chan5.setBackground(Color.WHITE);
-		chan5.setBounds(154, 409, 24, 25);
+		chan5.setBounds(153, 411, 22, 22);
 		contentPane.add(chan5);
 		
 		JRadioButton chan7 = new JRadioButton("");
 		chan7.setBackground(Color.WHITE);
-		chan7.setBounds(185, 409, 31, 25);
+		chan7.setBounds(183, 411, 22, 22);
 		contentPane.add(chan7);
 		
 		JRadioButton chan2 = new JRadioButton("");
 		chan2.setBackground(Color.WHITE);
-		chan2.setBounds(91, 447, 24, 25);
+		chan2.setBounds(93, 447, 22, 22);
 		contentPane.add(chan2);
 		
 		JRadioButton chan4 = new JRadioButton("");
 		chan4.setBackground(Color.WHITE);
-		chan4.setBounds(124, 447, 27, 25);
+		chan4.setBounds(123, 447, 22, 22);
 		contentPane.add(chan4);
 		
 		JRadioButton chan6 = new JRadioButton("");
 		chan6.setBackground(Color.WHITE);
-		chan6.setBounds(154, 447, 26, 25);
+		chan6.setBounds(153, 447, 22, 22);
 		contentPane.add(chan6);
 		
 		JRadioButton chan8 = new JRadioButton("");
 		chan8.setBackground(Color.WHITE);
-		chan8.setBounds(185, 447, 26, 25);
+		chan8.setBounds(183, 447, 22, 22);
 		contentPane.add(chan8);
 		
 		JButton start1 = new JButton("");
 		start1.setBackground(UIManager.getColor("Button.background"));
-		start1.setBounds(270, 62, 22, 15);
+		start1.setBounds(270, 62, 23, 18);
 		contentPane.add(start1);
 		
 		JButton start3 = new JButton("");
-		start3.setBounds(304, 62, 20, 17);
+		start3.setBounds(301, 62, 23, 18);
 		contentPane.add(start3);
 		
 		JButton start5 = new JButton("");
-		start5.setBounds(330, 64, 23, 16);
+		start5.setBounds(330, 62, 23, 18);
 		contentPane.add(start5);
 		
 		JButton start7 = new JButton("");
@@ -281,19 +281,109 @@ public class ChronoTimer extends JFrame {
 		contentPane.add(start7);
 		
 		JButton finish2 = new JButton("");
-		finish2.setBounds(273, 126, 18, 14);
+		finish2.setBounds(270, 125, 23, 18);
 		contentPane.add(finish2);
 		
 		JButton finish4 = new JButton("");
-		finish4.setBounds(302, 125, 20, 18);
+		finish4.setBounds(301, 125, 23, 18);
 		contentPane.add(finish4);
 		
 		JButton finish6 = new JButton("");
-		finish6.setBounds(330, 125, 25, 16);
+		finish6.setBounds(330, 125, 23, 18);
 		contentPane.add(finish6);
 		
 		JButton finish8 = new JButton("");
 		finish8.setBounds(362, 125, 23, 18);
 		contentPane.add(finish8);
+		
+		JButton leftArrow = new JButton("L");
+		leftArrow.setBounds(70, 214, 21, 23);
+		contentPane.add(leftArrow);
+		
+		JButton rightArrow = new JButton("R");
+		rightArrow.setBounds(99, 214, 21, 23);
+		contentPane.add(rightArrow);
+		
+		JButton downArrow = new JButton("D");
+		downArrow.setBounds(140, 214, 21, 23);
+		contentPane.add(downArrow);
+		
+		JButton upArrow = new JButton("U");
+		upArrow.setBounds(168, 214, 21, 23);
+		contentPane.add(upArrow);
+		
+		JLabel lblChan = new JLabel("CHAN");
+		lblChan.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblChan.setBounds(31, 394, 46, 14);
+		contentPane.add(lblChan);
+		
+		JLabel lblUsbPort = new JLabel("USB PORT");
+		lblUsbPort.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblUsbPort.setBounds(320, 423, 70, 14);
+		contentPane.add(lblUsbPort);
+		
+		JLabel lblStart = new JLabel("Start");
+		lblStart.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblStart.setBounds(232, 64, 32, 14);
+		contentPane.add(lblStart);
+		
+		JLabel lblEnabledisable = new JLabel("Enable/Disable");
+		lblEnabledisable.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblEnabledisable.setBounds(178, 84, 91, 14);
+		contentPane.add(lblEnabledisable);
+		
+		JLabel lblFinish = new JLabel("Finish");
+		lblFinish.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblFinish.setBounds(230, 126, 38, 14);
+		contentPane.add(lblFinish);
+		
+		JLabel label = new JLabel("Enable/Disable");
+		label.setFont(new Font("Tahoma", Font.BOLD, 11));
+		label.setBounds(178, 149, 91, 14);
+		contentPane.add(label);
+		
+		JLabel lblQueueRunning = new JLabel("Queue / Running / Final Time");
+		lblQueueRunning.setFont(new Font("Tahoma", Font.PLAIN, 9));
+		lblQueueRunning.setBounds(250, 325, 135, 14);
+		contentPane.add(lblQueueRunning);
+		
+		JLabel lblChronotimer = new JLabel("CHRONOTIMER 1009");
+		lblChronotimer.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 14));
+		lblChronotimer.setBounds(223, 27, 160, 14);
+		contentPane.add(lblChronotimer);
+		
+		JButton usbPort = new JButton("");
+		usbPort.setBounds(275, 425, 40, 10);
+		contentPane.add(usbPort);
+		
+		JLabel CHlabel_1 = new JLabel("1      3      5      7");
+		CHlabel_1.setFont(new Font("Tahoma", Font.BOLD, 12));
+		CHlabel_1.setBounds(96, 394, 129, 14);
+		contentPane.add(CHlabel_1);
+		
+		JLabel CHlabel_2 = new JLabel("2      4      6      8");
+		CHlabel_2.setFont(new Font("Tahoma", Font.BOLD, 12));
+		CHlabel_2.setBounds(96, 434, 129, 14);
+		contentPane.add(CHlabel_2);
+		
+		JLabel label_1 = new JLabel("1      3      5      7");
+		label_1.setFont(new Font("Tahoma", Font.BOLD, 12));
+		label_1.setBounds(273, 45, 129, 14);
+		contentPane.add(label_1);
+		
+		JLabel label_2 = new JLabel("2      4      6      8");
+		label_2.setFont(new Font("Tahoma", Font.BOLD, 12));
+		label_2.setBounds(273, 110, 129, 14);
+		contentPane.add(label_2);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
+		lblNewLabel.setBounds(10, 380, 610, 143);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
+		lblNewLabel_1.setBounds(10, 11, 610, 348);
+		contentPane.add(lblNewLabel_1);
 	}
 }
