@@ -298,5 +298,21 @@ public class ChronoTimer extends JFrame {
 		JButton finish8 = new JButton("");
 		finish8.setBounds(362, 125, 23, 18);
 		contentPane.add(finish8);
+		
+		JButton leftArrow = new JButton("L");
+		leftArrow.setBounds(70, 214, 21, 23);
+		contentPane.add(leftArrow);
+		
+		JButton rightArrow = new JButton("R");
+		rightArrow.setBounds(99, 214, 21, 23);
+		contentPane.add(rightArrow);
+		
+		JButton downArrow = new JButton("D");
+		downArrow.setBounds(140, 214, 21, 23);
+		contentPane.add(downArrow);
+		
+		JButton upArrow = new JButton("U");
+		upArrow.setBounds(168, 214, 21, 23);
+		contentPane.add(upArrow);
 	}
 }
