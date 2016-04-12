@@ -454,7 +454,7 @@
 					jButton9.setText("9");
 				}
 				pack();
-				this.setSize(372, 414);
+				this.setSize(280, 346);
 				
 			} catch (Exception e) {
 			    //add your error handling code here
