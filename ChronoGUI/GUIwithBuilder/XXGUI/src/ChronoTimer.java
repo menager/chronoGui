@@ -201,7 +201,7 @@ public class ChronoTimer extends JFrame {
 		
 		JButton btnFunction = new JButton("FUNCTION");
 		btnFunction.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		btnFunction.setBounds(48, 185, 107, 25);
+		btnFunction.setBounds(48, 183, 107, 25);
 		contentPane.add(btnFunction);
 		
 		JButton btnSwap = new JButton("SWAP");
@@ -268,15 +268,15 @@ public class ChronoTimer extends JFrame {
 		
 		JButton start1 = new JButton("");
 		start1.setBackground(UIManager.getColor("Button.background"));
-		start1.setBounds(270, 62, 22, 15);
+		start1.setBounds(270, 62, 23, 18);
 		contentPane.add(start1);
 		
 		JButton start3 = new JButton("");
-		start3.setBounds(304, 62, 20, 17);
+		start3.setBounds(301, 62, 23, 18);
 		contentPane.add(start3);
 		
 		JButton start5 = new JButton("");
-		start5.setBounds(330, 64, 23, 16);
+		start5.setBounds(330, 62, 23, 18);
 		contentPane.add(start5);
 		
 		JButton start7 = new JButton("");
@@ -284,15 +284,15 @@ public class ChronoTimer extends JFrame {
 		contentPane.add(start7);
 		
 		JButton finish2 = new JButton("");
-		finish2.setBounds(273, 126, 18, 14);
+		finish2.setBounds(270, 125, 23, 18);
 		contentPane.add(finish2);
 		
 		JButton finish4 = new JButton("");
-		finish4.setBounds(302, 125, 20, 18);
+		finish4.setBounds(301, 125, 23, 18);
 		contentPane.add(finish4);
 		
 		JButton finish6 = new JButton("");
-		finish6.setBounds(330, 125, 25, 16);
+		finish6.setBounds(330, 125, 23, 18);
 		contentPane.add(finish6);
 		
 		JButton finish8 = new JButton("");
