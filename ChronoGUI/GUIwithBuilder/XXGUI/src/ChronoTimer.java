@@ -229,42 +229,42 @@ public class ChronoTimer extends JFrame {
 		
 		JRadioButton chan1 = new JRadioButton("");
 		chan1.setBackground(Color.WHITE);
-		chan1.setBounds(94, 409, 28, 25);
+		chan1.setBounds(93, 411, 22, 22);
 		contentPane.add(chan1);
 		
 		JRadioButton chan3 = new JRadioButton("");
 		chan3.setBackground(Color.WHITE);
-		chan3.setBounds(124, 409, 26, 25);
+		chan3.setBounds(123, 411, 22, 22);
 		contentPane.add(chan3);
 		
 		JRadioButton chan5 = new JRadioButton("");
 		chan5.setBackground(Color.WHITE);
-		chan5.setBounds(154, 409, 24, 25);
+		chan5.setBounds(153, 411, 22, 22);
 		contentPane.add(chan5);
 		
 		JRadioButton chan7 = new JRadioButton("");
 		chan7.setBackground(Color.WHITE);
-		chan7.setBounds(185, 409, 31, 25);
+		chan7.setBounds(183, 411, 22, 22);
 		contentPane.add(chan7);
 		
 		JRadioButton chan2 = new JRadioButton("");
 		chan2.setBackground(Color.WHITE);
-		chan2.setBounds(91, 447, 24, 25);
+		chan2.setBounds(93, 447, 22, 22);
 		contentPane.add(chan2);
 		
 		JRadioButton chan4 = new JRadioButton("");
 		chan4.setBackground(Color.WHITE);
-		chan4.setBounds(124, 447, 27, 25);
+		chan4.setBounds(123, 447, 22, 22);
 		contentPane.add(chan4);
 		
 		JRadioButton chan6 = new JRadioButton("");
 		chan6.setBackground(Color.WHITE);
-		chan6.setBounds(154, 447, 26, 25);
+		chan6.setBounds(153, 447, 22, 22);
 		contentPane.add(chan6);
 		
 		JRadioButton chan8 = new JRadioButton("");
 		chan8.setBackground(Color.WHITE);
-		chan8.setBounds(185, 447, 26, 25);
+		chan8.setBounds(183, 447, 22, 22);
 		contentPane.add(chan8);
 		
 		JButton start1 = new JButton("");
@@ -318,7 +318,7 @@ public class ChronoTimer extends JFrame {
 		
 		JLabel lblChan = new JLabel("CHAN");
 		lblChan.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblChan.setBounds(31, 395, 46, 14);
+		lblChan.setBounds(31, 394, 46, 14);
 		contentPane.add(lblChan);
 		
 		JLabel lblUsbPort = new JLabel("USB PORT");
