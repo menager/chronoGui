@@ -322,7 +322,8 @@ public class ChronoTimer extends JFrame {
 		contentPane.add(lblChan);
 		
 		JLabel lblUsbPort = new JLabel("USB PORT");
-		lblUsbPort.setBounds(319, 420, 64, 14);
+		lblUsbPort.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblUsbPort.setBounds(320, 423, 70, 14);
 		contentPane.add(lblUsbPort);
 		
 		JLabel lblStart = new JLabel("Start");
@@ -345,5 +346,19 @@ public class ChronoTimer extends JFrame {
 		lblQueueRunning.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		lblQueueRunning.setBounds(250, 325, 135, 14);
 		contentPane.add(lblQueueRunning);
+		
+		JLabel lblChronotimer = new JLabel("CHRONOTIMER 1009");
+		lblChronotimer.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 14));
+		lblChronotimer.setBounds(223, 27, 160, 14);
+		contentPane.add(lblChronotimer);
+		
+		JButton usbPort = new JButton("");
+		usbPort.setBounds(275, 425, 40, 10);
+		contentPane.add(usbPort);
+		
+		JLabel label_1 = new JLabel("1      3      5      7");
+		label_1.setFont(new Font("Tahoma", Font.BOLD, 12));
+		label_1.setBounds(93, 394, 129, 14);
+		contentPane.add(label_1);
 	}
 }
