@@ -356,9 +356,24 @@ public class ChronoTimer extends JFrame {
 		usbPort.setBounds(275, 425, 40, 10);
 		contentPane.add(usbPort);
 		
+		JLabel CHlabel_1 = new JLabel("1      3      5      7");
+		CHlabel_1.setFont(new Font("Tahoma", Font.BOLD, 12));
+		CHlabel_1.setBounds(96, 394, 129, 14);
+		contentPane.add(CHlabel_1);
+		
+		JLabel CHlabel_2 = new JLabel("2      4      6      8");
+		CHlabel_2.setFont(new Font("Tahoma", Font.BOLD, 12));
+		CHlabel_2.setBounds(96, 434, 129, 14);
+		contentPane.add(CHlabel_2);
+		
 		JLabel label_1 = new JLabel("1      3      5      7");
 		label_1.setFont(new Font("Tahoma", Font.BOLD, 12));
-		label_1.setBounds(93, 394, 129, 14);
+		label_1.setBounds(273, 45, 129, 14);
 		contentPane.add(label_1);
+		
+		JLabel label_2 = new JLabel("2      4      6      8");
+		label_2.setFont(new Font("Tahoma", Font.BOLD, 12));
+		label_2.setBounds(273, 110, 129, 14);
+		contentPane.add(label_2);
 	}
 }
