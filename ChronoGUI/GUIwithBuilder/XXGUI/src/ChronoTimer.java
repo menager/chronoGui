@@ -27,6 +27,7 @@ import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
 import java.awt.SystemColor;
 import javax.swing.UIManager;
+import javax.swing.border.MatteBorder;
 
 public class ChronoTimer extends JFrame {
 
@@ -63,7 +64,7 @@ public class ChronoTimer extends JFrame {
 		JLabel lblNewLabel = new JLabel("New label");
 		lblNewLabel.setBounds(5, 5, 615, 510);
 		lblNewLabel.setOpaque(true);
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Dave\\git\\chronoGui\\ChronoGUI\\GUIwithBuilder\\XXGUI\\chrono.jpg"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Morgan\\git\\chronoGui\\ChronoGUI\\GUIwithBuilder\\XXGUI\\chrono.jpg"));
 		contentPane.add(lblNewLabel);
 		
 		JButton btn1 = new JButton("1");
@@ -214,11 +215,13 @@ public class ChronoTimer extends JFrame {
 		contentPane.add(btnPrinterPwr);
 		
 		JTextArea mainDisplay = new JTextArea();
+		mainDisplay.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
 		mainDisplay.setText("");
 		mainDisplay.setBounds(243, 183, 149, 135);
 		contentPane.add(mainDisplay);
 		
 		JTextArea txtrPrinterarea = new JTextArea();
+		txtrPrinterarea.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
 		txtrPrinterarea.setText("");
 		txtrPrinterarea.setBounds(454, 60, 84, 80);
 		contentPane.add(txtrPrinterarea);
